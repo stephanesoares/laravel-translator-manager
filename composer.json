@@ -1,0 +1,29 @@
+{
+    "name": "stephanesoares/laravel-translator-manager",
+    "description": "Translate your laravel application",
+    "keywords": [
+        "laravel",
+        "translations",
+        "translator"
+      ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephane Soares",
+            "email": "stephanesoares11@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1|^8",
+        "guzzlehttp/guzzle": "~6.0|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "StephaneSoares\\TranslationManager\\": "src/"
+        }
+    }
+}
