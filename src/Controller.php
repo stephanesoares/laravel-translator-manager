@@ -188,7 +188,7 @@ class Controller extends BaseController
                     continue;
                 }
 
-                $translated_text = GoogleTranslate::trans($base_string->value, $newLocale, 'en', ['verify' => false, 'client' => 'webapp']);
+                $translated_text = GoogleTranslate::trans($base_string->value ?? $base_string->key, $newLocale, 'en', ['verify' => false, 'client' => 'webapp']);
                 sleep(1);
 
                 request()->replace([
